@@ -19,7 +19,7 @@ const HomeRattan = () => {
       </div>
 
       <div id="products" className="products-section">
-        <h2>Our Products</h2>
+        <h2 className="products-section-title">Our Products</h2>
         <div className="product-card-container">
           <div className="product-card">
             <div className="product-card-image-container"></div>

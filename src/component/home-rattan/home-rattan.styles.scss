@@ -13,10 +13,16 @@
 
 .about-section {
   padding: 20px 40px;
+  .about-section-title {
+    margin-top: 70px;
+  }
 }
 
 .products-section {
-  padding: 20px 40px;
+  padding: 10px 40px;
+  .products-section-title {
+    margin-top: 70px;
+  }
   .product-card-container {
     .product-card {
       .product-card-image-container {
@@ -38,7 +44,10 @@
 }
 
 .contacts-section {
-  padding: 20px 40px;
+  padding: 10px 40px;
+  .contact-section-title {
+    margin-top: 70px;
+  }
   .contact-card-container {
     .contact-card {
       display: flex;
