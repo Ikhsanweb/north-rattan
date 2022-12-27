@@ -66,7 +66,7 @@ const NavbarRattan = () => {
         </div>
       </div>
       <div className="wa-button">
-        <a href="https://wa.me/">
+        <a href="https://wa.me/0812650469760">
           <IoLogoWhatsapp />
         </a>
       </div>
