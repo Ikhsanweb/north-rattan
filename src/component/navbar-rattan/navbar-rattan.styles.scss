@@ -1,0 +1,144 @@
+.navbar-rattan-container {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 25px;
+  margin-bottom: 25px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: rgb(32, 32, 34);
+  color: white;
+  align-items: center;
+}
+
+.navbar-rattan-logo {
+  height: 100%;
+  width: 100%;
+  // padding: 25px;
+  margin: auto 0;
+  display: flex;
+  align-items: center;
+  .logo-rattan {
+    font-size: 20px;
+    color: white;
+    line-height: 1;
+  }
+}
+
+.nav-rattan-links {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  span {
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 800px) {
+    display: none;
+  }
+}
+
+.nav-rattan-link {
+  padding: 10px 15px;
+  cursor: pointer;
+  @media screen and (max-width: 800px) {
+    display: none;
+  }
+}
+
+.navbar-rattan-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  // background-color: antiquewhite;
+  border-radius: 8px;
+}
+
+.navbar-rattan-menu-icon {
+  color: var(--color-primary-variant);
+  font-size: 3rem;
+  font-weight: 600;
+  z-index: 15;
+}
+
+.navbar-rattan-responsive-menu {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: max-content;
+  background-color: rgb(32, 32, 34);
+  top: 0;
+  right: 0;
+  padding: 4rem 1rem;
+  transform: translateY(-390px);
+  transition: all 400ms ease;
+
+  /*display: none;*/
+}
+
+.navbar-rattan-responsive-menu.menufalse {
+  position: absolute;
+  width: 100%;
+  height: max-content;
+  transform: translateY(0);
+  background-color: rgb(32, 32, 34);
+  top: 0;
+  right: 0;
+  padding: 6rem 1rem;
+  display: block;
+  transition: all 400ms ease;
+}
+.navbar-rattan-responsive-menu > ul {
+  list-style-type: none;
+}
+
+.navbar-rattan-responsive-menu > ul > li {
+  padding: 0.5rem 0;
+}
+
+.navbar-rattan-responsive-menu > ul > li > a {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+}
+
+.wa-button {
+  position: fixed;
+  background-color: green;
+  // padding: 20px;
+  height: 75px;
+  width: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  top: 85vh;
+  right: 5vw;
+  a {
+    color: white;
+    font-size: 40px;
+    margin-top: 6px;
+  }
+}
+
+.footer-section {
+  background-color: rgb(32, 32, 34);
+  width: 100%;
+  height: 300px;
+  color: white;
+  // position: absolute;
+  display: flex;
+  padding: 30px;
+  flex-direction: column;
+  .footer-section-end {
+    margin: 20px 0;
+  }
+}

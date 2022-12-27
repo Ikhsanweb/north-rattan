@@ -1,0 +1,63 @@
+.home-rattan-container {
+  display: flex;
+  flex-direction: column;
+  // background-color: black;
+
+  .hero-section {
+    background-color: rgb(61, 61, 65);
+    color: white;
+    padding: 30px 25px;
+    height: 350px;
+  }
+}
+
+.about-section {
+  padding: 20px 40px;
+}
+
+.products-section {
+  padding: 20px 40px;
+  .product-card-container {
+    .product-card {
+      .product-card-image-container {
+        background-color: red;
+        height: 280px;
+        border-radius: 20px;
+        margin-bottom: 20px;
+      }
+      .product-card-description {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+      }
+      .product-card-explanation {
+        margin-bottom: 45px;
+      }
+    }
+  }
+}
+
+.contacts-section {
+  padding: 20px 40px;
+  .contact-card-container {
+    .contact-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .contact-card-image-component {
+        background-color: aquamarine;
+        height: 200px;
+        width: 200px;
+        border-radius: 90%;
+        margin-bottom: 20px;
+        margin-top: 20px;
+      }
+      .contact-card-description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}

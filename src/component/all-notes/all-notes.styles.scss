@@ -1,0 +1,16 @@
+.all-notes-container {
+  display: flex;
+  flex-direction: column;
+
+  .all-notes-title {
+    margin: auto;
+  }
+  .all-notes-add {
+    margin-bottom: 30px;
+  }
+  .all-notes-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+  }
+}
