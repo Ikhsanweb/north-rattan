@@ -1,4 +1,4 @@
-import { Fragment, useState } from 'react';
+import { Fragment, useState, useEffect } from 'react';
 import { Link, Outlet } from 'react-router-dom';
 import './navbar-rattan.styles.scss';
 import { FiMenu } from 'react-icons/fi';
@@ -6,9 +6,30 @@ import { IoLogoWhatsapp } from 'react-icons/io5';
 
 const NavbarRattan = () => {
   const [isNextNavClicked, setIsNextNavClicked] = useState(true);
+  const [changeScroll, setChangeScroll] = useState(true);
+
+  const changeNavbarColor = () => {
+    if (window.scrollY >= 70) {
+      setChangeScroll(true);
+    } else {
+      setChangeScroll(false);
+    }
+  };
+
+  useEffect(() => {
+    changeNavbarColor();
+    window.addEventListener('scroll', changeNavbarColor);
+  }, [changeScroll]);
+
   return (
     <Fragment>
-      <div className="navbar-rattan-container">
+      <div
+        className={
+          changeScroll
+            ? 'navbar-rattan-container'
+            : 'navbar-rattan-container change-scroll'
+        }
+      >
         <Link className="navbar-rattan-logo" to="/">
           <h1 className="logo-rattan">North Rattan</h1>
           {/* <h1 className="logo">Rattan</h1> */}

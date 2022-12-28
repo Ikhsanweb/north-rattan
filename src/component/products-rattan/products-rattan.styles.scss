@@ -1,0 +1,57 @@
+.products-rattan-container {
+  margin-top: -70px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  .products-rattan-navbar {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgb(49, 38, 38);
+    position: fixed;
+    .products-rattan-home-icon {
+      padding: 5px 8px;
+      border: 2px solid white;
+      color: white;
+      border-radius: 10px;
+      font-size: 25px;
+      a {
+        color: wheat;
+      }
+    }
+  }
+  .products-rattan-title {
+    padding: 140px 70px 70px 70px;
+    text-align: center;
+  }
+  .products-rattan-contents {
+    .products-rattan-content {
+      display: flex;
+      flex-direction: column;
+      h2 {
+        padding: 10px 20px;
+      }
+      .products-rattan-image-container {
+        padding: 0 40px;
+        height: 280px;
+        // width: 100%;
+        border-radius: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        h2 {
+          margin-top: 70px;
+          padding: 0;
+        }
+        img {
+          // height: 100%;
+          width: 100%;
+          border-radius: 20px;
+          margin: 10px 0;
+        }
+      }
+    }
+  }
+}

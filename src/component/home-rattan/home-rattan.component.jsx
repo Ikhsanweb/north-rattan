@@ -1,10 +1,15 @@
 import './home-rattan.styles.scss';
+import { RMF, TPaul } from '../../constants/image';
+import { products } from '../../constants/resource';
+import { Link } from 'react-router-dom';
 
 const HomeRattan = () => {
   return (
     <div className="home-rattan-container">
       <div id="hero" className="hero-section">
-        <h1>Welcome to North Rattan</h1>
+        <h1>
+          Welcome to <br /> North Rattan
+        </h1>
       </div>
 
       <div id="about" className="about-section">
@@ -20,28 +25,28 @@ const HomeRattan = () => {
 
       <div id="products" className="products-section">
         <h2 className="products-section-title">Our Products</h2>
-        <div className="product-card-container">
-          <div className="product-card">
-            <div className="product-card-image-container"></div>
-            <div className="product-card-description">
-              <span className="product-card-title">Rattan Manau</span>
-              <span className="product-card-subtitle">Stock: 20.000</span>
-            </div>
-            <div className="product-card-explanation">
-              <span>
-                Rattan sells well in local and international markets which has
-                high commercial value. Mostly used for househol furniture such
-                as tables, chairs, beds amd others
-              </span>
-            </div>
-          </div>
-          <div className="product-card">
-            <div className="product-card-image-container"></div>
-            <div className="product-card-description">
-              <span className="product-card-title">Rattan B</span>
-              <span className="product-card-subtitle">Stock: 30.000 pts</span>
+
+        {products.map(({ name, id, image, descriptiom, status }) => (
+          <div key={id} className="product-card-container">
+            <div className="product-card">
+              <div className="product-card-image-container">
+                <img src={image} alt={name} />
+              </div>
+              <div className="product-card-description">
+                <span className="product-card-title">{name}</span>
+                <span className="product-card-subtitle">{status}</span>
+              </div>
+              <div className="product-card-explanation">
+                <span>{descriptiom}</span>
+              </div>
             </div>
           </div>
+        ))}
+
+        <div className="all-products">
+          <span>
+            <Link to="products">SEE All PRODUCTS</Link>
+          </span>
         </div>
       </div>
 
@@ -49,19 +54,21 @@ const HomeRattan = () => {
         <h2 className="contact-section-title">Contact Us</h2>
         <div className="contact-card-container">
           <div className="contact-card">
-            <div className="contact-card-image-component"></div>
+            <div className="contact-card-image-component">
+              <img src={TPaul} alt="Tohir" />
+            </div>
             <div className="contact-card-description">
               <span className="contact-card-name">Tohir Paul</span>
               <span className="contact-card-phone">088808880888</span>
             </div>
           </div>
-          <div className="contact-card">
+          {/* <div className="contact-card">
             <div className="contact-card-image-component"></div>
             <div className="contact-card-description">
               <span className="contact-card-name">Tohir Paul</span>
               <span className="contact-card-phone">088808880888</span>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
@@ -69,3 +76,6 @@ const HomeRattan = () => {
 };
 
 export default HomeRattan;
+
+// https://unsplash.com/photos/UovnNJOG9Vw?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+// https://unsplash.com/photos/p26ANvMUqCk?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink

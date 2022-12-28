@@ -7,6 +7,7 @@ import './App.css';
 
 import HomeRattan from './component/home-rattan/home-rattan.component';
 import NavbarRattan from './component/navbar-rattan/navbar-rattan.component';
+import ProductsRattan from './component/products-rattan/products-rattan.component';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Route path="/" element={<NavbarRattan />}>
         <Route path="/" element={<HomeRattan />} />
       </Route>
+      <Route path="/products" element={<ProductsRattan />} />
     </Routes>
   );
 }
