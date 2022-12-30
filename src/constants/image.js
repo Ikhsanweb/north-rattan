@@ -36,6 +36,11 @@ import Hero2 from '../assets/hero2.jpg';
 import TPaul from '../assets/tpaul.jpg';
 import SPaul from '../assets/spaul.jpg';
 
+import NRLogoWhite from '../assets/nrlogo2.png';
+import NRLogoBasic from '../assets/nrlogo3.png';
+import NRLogo from '../assets/nrlogo.png';
+import NRWLogo from '../assets/nrwlogotrans.png';
+
 export {
   RBF,
   RBM,
@@ -66,4 +71,8 @@ export {
   Hero2,
   TPaul,
   SPaul,
+  NRLogoWhite,
+  NRLogoBasic,
+  NRLogo,
+  NRWLogo,
 };

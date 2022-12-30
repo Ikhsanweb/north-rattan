@@ -3,6 +3,12 @@ import { Link, Outlet } from 'react-router-dom';
 import './navbar-rattan.styles.scss';
 import { FiMenu } from 'react-icons/fi';
 import { IoLogoWhatsapp } from 'react-icons/io5';
+import {
+  NRLogo,
+  NRLogoBasic,
+  NRLogoWhite,
+  NRWLogo,
+} from '../../constants/image';
 
 const NavbarRattan = () => {
   const [isNextNavClicked, setIsNextNavClicked] = useState(true);
@@ -31,8 +37,18 @@ const NavbarRattan = () => {
         }
       >
         <Link className="navbar-rattan-logo" to="/">
-          <h1 className="logo-rattan">North Rattan</h1>
+          {/* <h1
+            className={changeScroll ? 'logo-rattan' : 'logo-rattan change-logo'}
+          >
+            North Rattan
+          </h1> */}
           {/* <h1 className="logo">Rattan</h1> */}
+          <img
+            src={NRWLogo}
+            alt="North Rattan"
+            // className={changeScroll ? 'logo-img' : 'logo-img change-logo'}
+            className="logo-img"
+          />
         </Link>
         <div className="nav-rattan-links">
           <Link className="nav-rattan-link" to="/auth">
@@ -94,10 +110,13 @@ const NavbarRattan = () => {
       <Outlet />
       <div className="footer-section">
         <div className="footer-section-content">
-          <div className="footer-text">
-            <h2>Find more</h2>
+          <div className="footer-image-container">
+            <img src={NRWLogo} alt="" />
           </div>
-          <span className="footer-section-end">North Rattan 2023</span>
+          <div className="footer-text">{/* <h5>Find more</h5> */}</div>
+          <span className="footer-section-end">
+            North Rattan 2023. All rights reserved
+          </span>
         </div>
       </div>
     </Fragment>
