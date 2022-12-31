@@ -71,7 +71,7 @@
 .nav-rattan-links {
   width: 50%;
   height: 100%;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: flex-end;
 
@@ -79,16 +79,21 @@
     cursor: pointer;
   }
 
-  @media screen and (max-width: 800px) {
-    display: none;
+  @media screen and (min-width: 1024px) {
+    display: flex;
   }
 }
 
 .nav-rattan-link {
   padding: 10px 15px;
   cursor: pointer;
-  @media screen and (max-width: 800px) {
-    display: none;
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    font-size: 20px;
+    margin: 0px 15px;
+    padding: 0px 0px;
+    color: white;
+    font-weight: 800;
   }
 }
 
@@ -100,6 +105,9 @@
   height: 2.5rem;
   // background-color: antiquewhite;
   border-radius: 8px;
+  @media screen and (min-width: 1024px) {
+    display: none;
+  }
 }
 
 .navbar-rattan-menu-icon {

@@ -20,7 +20,28 @@ const products = [
     image: RMN,
     status: 'Ready Stock',
     descriptiom:
-      'Rattan sells well in local and international markets which has high commercial value. Mostly used for househol furniture such as tables, chairs, beds amd others',
+      'Rattan sells well in local and international markets which has high commercial value. Mostly used for household furniture such as tables, chairs, beds amd others.',
+    characteristicTitle: 'Manau',
+    characteristic: [
+      {
+        characteristicId: 111,
+        characteristicText: 'Diameter 2 - 5 cm.',
+      },
+      {
+        characteristicId: 112,
+        characteristicText: 'Segment length 18 - 35 cm.',
+      },
+      {
+        characteristicId: 113,
+        characteristicText:
+          'Usually made as rattan handicraft as well and also part of home furniture such as rattan table, rattan sofa, rattan lantern and many more.',
+      },
+      {
+        characteristicId: 114,
+        characteristicText:
+          'One of few rattans that have sold arround the world.',
+      },
+    ],
     items: [
       {
         itemId: 11,
@@ -44,7 +65,22 @@ const products = [
     name: 'Rattan Sega',
     image: RSN,
     status: 'Ready Stock',
-    descriptiom: 'Good quality rattan ',
+    descriptiom: '',
+    characteristicTitle: 'Sega',
+    characteristic: [
+      {
+        characteristicId: 211,
+        characteristicText: 'Smaller than Manau, Baliong and Getah rattan.',
+      },
+      {
+        characteristicId: 212,
+        characteristicText: 'Diameter 25 mm.',
+      },
+      {
+        characteristicId: 213,
+        characteristicText: 'Segment length 15 - 50 cm.',
+      },
+    ],
     items: [
       {
         itemId: 21,
@@ -63,7 +99,27 @@ const products = [
     name: 'Rattan Baliong',
     image: RBN,
     status: 'Pre Order',
-    descriptiom: 'Good quality rattan ',
+    descriptiom: '',
+    characteristicTitle: 'Baliong',
+    characteristic: [
+      {
+        characteristicId: 311,
+        characteristicText: 'Diameter 25 - 35 mm.',
+      },
+      {
+        characteristicId: 312,
+        characteristicText:
+          'Mostly as rattan frame before it turns as rattan products.',
+      },
+      {
+        characteristicId: 313,
+        characteristicText: 'Segment length 20 - 30 cm.',
+      },
+      {
+        characteristicId: 314,
+        characteristicText: 'The colour of this rattan is reddish brown.',
+      },
+    ],
     items: [
       {
         itemId: 31,
@@ -87,7 +143,22 @@ const products = [
     name: 'Rattan Getah',
     image: RGN,
     status: 'Pre Order',
-    descriptiom: 'Good quality rattan ',
+    descriptiom: '',
+    characteristicTitle: 'Getah',
+    characteristic: [
+      {
+        characteristicId: 411,
+        characteristicText: 'A bit more longer than Manau and Baliong rattan.',
+      },
+      {
+        characteristicId: 412,
+        characteristicText: 'Diameter 5 - 10 cm.',
+      },
+      {
+        characteristicId: 413,
+        characteristicText: 'Segment length 30 - 40 cm.',
+      },
+    ],
     items: [
       {
         itemId: 41,

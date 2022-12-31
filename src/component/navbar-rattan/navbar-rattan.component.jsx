@@ -52,7 +52,7 @@ const NavbarRattan = () => {
         </Link>
         <div className="nav-rattan-links">
           <Link className="nav-rattan-link" to="/auth">
-            ABOUT US
+            ABOUT
           </Link>
           <Link className="nav-rattan-link" to="/auth">
             PRODUCT

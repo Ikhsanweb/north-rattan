@@ -7,9 +7,8 @@ const HomeRattan = () => {
   return (
     <div className="home-rattan-container">
       <div id="hero" className="hero-section">
-        <h1>
-          Welcome to <br /> North Rattan
-        </h1>
+        <h2>Welcome to</h2>
+        <h1>North Rattan</h1>
       </div>
 
       <div id="about" className="about-section">
@@ -25,27 +24,47 @@ const HomeRattan = () => {
 
       <div id="products" className="products-section">
         <h2 className="products-section-title">Our Products</h2>
-
-        {products.map(({ name, id, image, descriptiom, status }) => (
-          <div key={id} className="product-card-container">
-            <div className="product-card">
-              <div className="product-card-image-container">
-                <img src={image} alt={name} />
+        <div className="product-card-container">
+          {products.map(
+            ({
+              name,
+              id,
+              image,
+              descriptiom,
+              status,
+              characteristicTitle,
+              characteristic,
+            }) => (
+              <div key={id} className="product-card">
+                <div className="product-card-image-container">
+                  <img src={image} alt={name} />
+                </div>
+                <div className="product-card-description">
+                  <span className="product-card-title">{name}</span>
+                  <span className="product-card-subtitle">{status}</span>
+                </div>
+                <div className="product-card-explanation">
+                  <span>{descriptiom}</span>
+                </div>
+                <div className="product-card-characteristic">
+                  <span>Characteristic of {characteristicTitle} rattan</span>
+                  <ul>
+                    {characteristic.map(
+                      ({ characteristicId, characteristicText }) => (
+                        <li key={characteristicId}>{characteristicText}</li>
+                      )
+                    )}
+                  </ul>
+                </div>
               </div>
-              <div className="product-card-description">
-                <span className="product-card-title">{name}</span>
-                <span className="product-card-subtitle">{status}</span>
-              </div>
-              <div className="product-card-explanation">
-                <span>{descriptiom}</span>
-              </div>
-            </div>
-          </div>
-        ))}
+            )
+          )}
+        </div>
 
         <div className="all-products">
           <span>
-            <Link to="products">SEE All PRODUCTS</Link>
+            {/* <Link to="products">SEE All PRODUCTS</Link> */}
+            <a href="https://wa.me/0812650469760">VISIT US</a>
           </span>
         </div>
       </div>
