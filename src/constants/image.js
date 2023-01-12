@@ -35,11 +35,33 @@ import Hero2 from '../assets/hero2.jpg';
 
 import TPaul from '../assets/tpaul.jpg';
 import SPaul from '../assets/spaul.jpg';
+import IPaul from '../assets/ipaul.jpg';
 
 import NRLogoWhite from '../assets/nrlogo2.png';
 import NRLogoBasic from '../assets/nrlogo3.png';
 import NRLogo from '../assets/nrlogo.png';
 import NRWLogo from '../assets/nrwlogotrans.png';
+
+import WorkerPicOne from '../assets/worker close-up mid (1).jpg';
+import WorkerPicTwo from '../assets/worker close-up mid (2).jpg';
+
+import TablePicOne from '../assets/table close-up near (1).jpg';
+
+import RattanPicOne from '../assets/rattan close-up mid (1).jpg';
+import RattanPicTwo from '../assets/rattan close-up mid (2).jpg';
+import RattanPicThree from '../assets/rattan close-up mid (3).jpg';
+import RattanPicFour from '../assets/rattan close-up mid (4).jpg';
+import RattanPicFive from '../assets/rattan close-up mid (5).jpg';
+
+import ChairMidPicOne from '../assets/chair close-up mid (1).jpg';
+import ChairMidPicTwo from '../assets/chair close-up mid (2).jpg';
+
+import ChairPicOne from '../assets/chair close-up near (1).jpg';
+import ChairPicTwo from '../assets/chair close-up near (2).jpg';
+import ChairPicThree from '../assets/chair close-up near (3).jpg';
+import ChairPicFour from '../assets/chair close-up near (4).jpg';
+
+import Handcrafted from '../assets/handcrafted(1).jpg';
 
 export {
   RBF,
@@ -71,8 +93,24 @@ export {
   Hero2,
   TPaul,
   SPaul,
+  IPaul,
   NRLogoWhite,
   NRLogoBasic,
   NRLogo,
   NRWLogo,
+  WorkerPicOne,
+  WorkerPicTwo,
+  TablePicOne,
+  RattanPicOne,
+  RattanPicTwo,
+  RattanPicThree,
+  RattanPicFour,
+  RattanPicFive,
+  ChairMidPicOne,
+  ChairMidPicTwo,
+  ChairPicOne,
+  ChairPicTwo,
+  ChairPicThree,
+  ChairPicFour,
+  Handcrafted,
 };

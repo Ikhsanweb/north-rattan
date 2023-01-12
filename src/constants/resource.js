@@ -18,7 +18,7 @@ const products = [
     id: 1,
     name: 'Rattan Manau',
     image: RMN,
-    status: 'Ready Stock',
+    status: '',
     descriptiom:
       'Rattan sells well in local and international markets which has high commercial value. Mostly used for household furniture such as tables, chairs, beds amd others.',
     characteristicTitle: 'Manau',
@@ -64,7 +64,7 @@ const products = [
     id: 2,
     name: 'Rattan Sega',
     image: RSN,
-    status: 'Ready Stock',
+    status: '',
     descriptiom: '',
     characteristicTitle: 'Sega',
     characteristic: [
@@ -98,7 +98,7 @@ const products = [
     id: 3,
     name: 'Rattan Baliong',
     image: RBN,
-    status: 'Pre Order',
+    status: '',
     descriptiom: '',
     characteristicTitle: 'Baliong',
     characteristic: [
@@ -142,7 +142,7 @@ const products = [
     id: 4,
     name: 'Rattan Getah',
     image: RGN,
-    status: 'Pre Order',
+    status: '',
     descriptiom: '',
     characteristicTitle: 'Getah',
     characteristic: [
