@@ -42,7 +42,12 @@
   .about-intoduction {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-top: 100px;
+    grid-gap: 0;
+    margin: 100px auto 50px auto;
+    width: fit-content;
+    @media screen and (min-width: 768px) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
     .about-introduction-text-container {
       display: flex;
       flex-direction: column;
@@ -116,7 +121,12 @@
   }
 
   .product-card-mod-container {
-    // display: grid;
+    display: grid;
+    grid-template-columns: 1fr;
+    @media screen and (min-width: 768px) {
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 15px;
+    }
     .product-cart-mod {
       display: flex;
       flex-direction: column;
@@ -308,6 +318,9 @@
   background-color: rgb(37, 35, 35);
   color: white;
   padding: 20px;
+  @media screen and (min-width: 768px) {
+    padding: 50px;
+  }
   p {
     font-size: 20px;
   }

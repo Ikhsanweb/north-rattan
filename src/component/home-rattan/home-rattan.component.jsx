@@ -52,7 +52,13 @@ const HomeRattan = () => {
             <img src={RattanPicOne} alt="" />
           </div>
           <div className="about-introduction-text-container">
-            <p>From Sumatera Utara</p>
+            <p>
+              From
+              <br />
+              Sumatera
+              <br />
+              Utara
+            </p>
           </div>
         </div>
       </div>
