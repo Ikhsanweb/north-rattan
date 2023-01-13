@@ -35,6 +35,7 @@ const HomeRattan = () => {
           best quality rattan for customer. We can serve any kind of rattan and
           also rattan furniture products such as tables, chairs, baskets and
           many more`
+          <hr />
         </p>
 
         <div className="about-intoduction">

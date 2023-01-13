@@ -5,7 +5,7 @@
   // background-color: black;
   .hero-section {
     // background-color: rgb(61, 61, 65);
-    background-image: url('../../assets/hero2.jpg');
+    background-image: url('../../assets/hero3.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     backdrop-filter: grayscale(30%);
@@ -54,11 +54,18 @@
     font-size: 30px;
     text-align: center;
   }
+  .about-section-paragraph {
+    text-align: center;
+    hr {
+      margin-top: 40px;
+      width: 40%;
+    }
+  }
   .about-intoduction {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 0;
-    margin: 100px auto 50px auto;
+    margin: 60px auto 50px auto;
     width: fit-content;
     @media screen and (min-width: 768px) {
       grid-template-columns: 1fr 1fr 1fr;
@@ -105,7 +112,7 @@
   display: flex;
   flex-direction: column;
   justify-content: end;
-  height: 350px;
+  height: 400px;
   width: 100%;
   margin: 40px auto;
   padding: 20px 20px 50px 20px;
@@ -417,7 +424,7 @@
         line-height: 1.5;
         .contact-card-name {
           font-size: 25px;
-          font-weight: 600;
+          font-weight: 400;
           span {
             color: rgb(37, 35, 35);
           }
@@ -430,7 +437,7 @@
         .contact-card-position {
           font-size: 20px;
           color: rgb(37, 35, 35);
-          font-weight: 800;
+          font-weight: 700;
         }
         .contact-card-phone {
           font-size: 15px;

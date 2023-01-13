@@ -30,8 +30,7 @@ import RTable2 from '../assets/rattan-table-2.jpg';
 import RTable from '../assets/rattan-table.jpg';
 import RWardrobe from '../assets/rattan-wardrobe.jpg';
 
-import Hero from '../assets/hero.jpg';
-import Hero2 from '../assets/hero2.jpg';
+import Hero2 from '../assets/hero3.jpg';
 
 import TPaul from '../assets/tpaul.jpg';
 import SPaul from '../assets/spaul.jpg';
@@ -89,7 +88,6 @@ export {
   RTable2,
   RTable,
   RWardrobe,
-  Hero,
   Hero2,
   TPaul,
   SPaul,
