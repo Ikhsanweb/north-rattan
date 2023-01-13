@@ -22,6 +22,7 @@ const products = [
     descriptiom:
       'Rattan sells well in local and international markets which has high commercial value. Mostly used for household furniture such as tables, chairs, beds amd others.',
     characteristicTitle: 'Manau',
+    subTitle: 'D: 2-5cm / L: 18-35cm',
     characteristic: [
       {
         characteristicId: 111,
@@ -67,6 +68,7 @@ const products = [
     status: '',
     descriptiom: '',
     characteristicTitle: 'Sega',
+    subTitle: 'D: 25mm / L: 15-50cm',
     characteristic: [
       {
         characteristicId: 211,
@@ -101,6 +103,7 @@ const products = [
     status: '',
     descriptiom: '',
     characteristicTitle: 'Baliong',
+    subTitle: 'D: 25-35mm / L: 20-30cm',
     characteristic: [
       {
         characteristicId: 311,
@@ -145,6 +148,7 @@ const products = [
     status: '',
     descriptiom: '',
     characteristicTitle: 'Getah',
+    subTitle: 'D: 5-10cm / L: 30-40cm',
     characteristic: [
       {
         characteristicId: 411,

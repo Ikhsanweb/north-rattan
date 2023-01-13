@@ -3,19 +3,14 @@ import { Link, Outlet } from 'react-router-dom';
 import './navbar-rattan.styles.scss';
 import { FiMenu } from 'react-icons/fi';
 import { IoLogoWhatsapp } from 'react-icons/io5';
-import {
-  NRLogo,
-  NRLogoBasic,
-  NRLogoWhite,
-  NRWLogo,
-} from '../../constants/image';
+import { NRWLogo } from '../../constants/image';
 
 const NavbarRattan = () => {
   const [isNextNavClicked, setIsNextNavClicked] = useState(true);
   const [changeScroll, setChangeScroll] = useState(true);
 
   const changeNavbarColor = () => {
-    if (window.scrollY >= 70) {
+    if (window.scrollY >= 370) {
       setChangeScroll(true);
     } else {
       setChangeScroll(false);
@@ -36,35 +31,52 @@ const NavbarRattan = () => {
             : 'navbar-rattan-container change-scroll'
         }
       >
-        <Link className="navbar-rattan-logo" to="/">
-          {/* <h1
-            className={changeScroll ? 'logo-rattan' : 'logo-rattan change-logo'}
+        <a className="navbar-rattan-logo" href="#about">
+          <div
+            // className="logo-container"
+            className={
+              changeScroll ? 'logo-container' : 'logo-container change-scroll'
+            }
           >
-            North Rattan
-          </h1> */}
-          {/* <h1 className="logo">Rattan</h1> */}
-          <img
-            src={NRWLogo}
-            alt="North Rattan"
-            // className={changeScroll ? 'logo-img' : 'logo-img change-logo'}
-            className="logo-img"
-          />
-        </Link>
+            <img
+              src={NRWLogo}
+              alt="North Rattan"
+              // className={changeScroll ? 'logo-img' : 'logo-img change-logo'}
+              className="logo-img"
+            />
+            <span>North Rattan</span>
+          </div>
+        </a>
         <div className="nav-rattan-links">
-          <Link className="nav-rattan-link" to="/auth">
+          <a className="nav-rattan-link" href="#about">
             ABOUT
-          </Link>
-          <Link className="nav-rattan-link" to="/auth">
+          </a>
+          <a className="nav-rattan-link" href="#products">
             PRODUCT
-          </Link>
-          <Link className="nav-rattan-link" to="/auth">
+          </a>
+          <a className="nav-rattan-link" href="#contacts">
             CONTACTS
-          </Link>
+          </a>
         </div>
         <div className="navbar-rattan-menu">
           <FiMenu
             onClick={() => setIsNextNavClicked(!isNextNavClicked)}
-            className="navbar-rattan-menu-icon"
+            // className="navbar-rattan-menu-icon"
+            // className={
+            //   changeScroll === true
+            //     ? 'navbar-rattan-menu-icon'
+            //     : changeScroll === false
+            //     ? 'navbar-rattan-menu-icon change-scroll'
+            //     : changeScroll === true && isNextNavClicked === false
+            //     ? 'navbar-rattan-menu-icon change-scroll menufalse'
+            //     : 'navbar-rattan-menu-icon change-scroll'
+            // }
+
+            className={
+              changeScroll === false && isNextNavClicked === true
+                ? 'navbar-rattan-menu-icon change-scroll'
+                : 'navbar-rattan-menu-icon'
+            }
           />
         </div>
         <div

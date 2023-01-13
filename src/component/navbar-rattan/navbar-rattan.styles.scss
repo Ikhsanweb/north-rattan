@@ -8,12 +8,12 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 10;
+  z-index: 50;
   // background-color: #4eff8f;
-  background-color: rgb(99, 73, 60);
   color: white;
   align-items: center;
   transition: all 500ms ease;
+  background-color: transparent;
 }
 
 .navbar-rattan-container.change-scroll {
@@ -26,21 +26,53 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 10;
+  z-index: 50;
   color: white;
   align-items: center;
   transition: all 500ms ease;
-  background-color: transparent;
+  // background-color: rgb(99, 73, 60);
 }
 
 .navbar-rattan-logo {
   height: 50px;
-  // background-color: aqua;
   width: 100%;
-  // padding: 25px;
   margin: auto 0;
   display: flex;
   align-items: center;
+
+  .logo-container {
+    height: 50px;
+    width: fit-content;
+    padding: 10px 20px;
+    background-color: rgb(37, 35, 35);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    transition: all 400ms ease;
+    margin-left: -10px;
+    .logo-img {
+      height: 100%;
+    }
+    span {
+      margin-left: 15px;
+      font-size: 20px;
+      color: white;
+      transition: all 800ms ease;
+    }
+  }
+
+  .logo-container.change-scroll {
+    padding: 0;
+    background-color: transparent;
+    transition: all 800ms ease;
+    .logo-img {
+      height: 100%;
+    }
+    span {
+      display: none;
+      transition: all 400ms ease;
+    }
+  }
 
   .logo-rattan {
     font-size: 20px;
@@ -48,24 +80,6 @@
     line-height: 1;
     transition: all 800ms ease;
   }
-  .logo-img {
-    height: 100%;
-    // display: none;
-    // transition: all 800ms ease;
-  }
-
-  // .logo-rattan.change-logo {
-  //   font-size: 20px;
-  //   color: white;
-  //   line-height: 1;
-  //   display: none;
-  //   transition: all 800ms ease;
-  // }
-  // .logo-img.change-logo {
-  //   height: 100%;
-  //   display: block;
-  //   transition: all 800ms ease;
-  // }
 }
 
 .nav-rattan-links {
@@ -111,10 +125,18 @@
 }
 
 .navbar-rattan-menu-icon {
-  color: var(--color-primary-variant);
+  // color: var(--color-primary-variant);
+  color: rgb(32, 26, 23);
+  // color: cyan;
   font-size: 3rem;
-  font-weight: 600;
-  z-index: 15;
+  font-weight: 800;
+  z-index: 100;
+}
+
+.navbar-rattan-menu-icon.change-scroll {
+  // color: var(--color-primary-variant);
+  color: white;
+  z-index: 100;
 }
 
 .navbar-rattan-responsive-menu {
@@ -171,7 +193,7 @@
   // top: 85vh;
   bottom: 5vh;
   right: 5vw;
-  z-index: 30;
+  z-index: 50;
   a {
     color: white;
     font-size: 40px;
@@ -180,7 +202,7 @@
 }
 
 .footer-section {
-  background-color: rgb(99, 73, 60);
+  background-color: rgb(32, 26, 23);
   width: 100%;
   height: 150px;
   color: white;

@@ -7,21 +7,24 @@ import {
   Handcrafted,
   IPaul,
   RattanPicOne,
-  RMF,
   TablePicOne,
-  TPaul,
-  WorkerPicOne,
-  WorkerPicTwo,
 } from '../../constants/image';
 import { products } from '../../constants/resource';
-import { Link } from 'react-router-dom';
 
 const HomeRattan = () => {
   return (
     <div className="home-rattan-container">
       <div id="hero" className="hero-section">
-        <h2>Welcome to</h2>
-        <h1>North Rattan</h1>
+        <div className="hero-section-up">
+          <h2>Welcome to</h2>
+          <h1>North Rattan</h1>
+        </div>
+        <div className="hero-section-down">
+          <p>
+            Rattan Supplier and Manufacturer from Medan City, Indonesia. We
+            provide rattan material or furniture products.
+          </p>
+        </div>
       </div>
 
       <div id="about" className="about-section">
@@ -30,8 +33,8 @@ const HomeRattan = () => {
           North Rattan is supplier of rattan products from Sumatera Utara,
           Indonesia. We`re doing cooperation with a few rattan collector to give
           best quality rattan for customer. We can serve any kind of rattan and
-          also rattan furniture products such as rattan table, rattan chair,
-          rattan lantern and many more`
+          also rattan furniture products such as tables, chairs, baskets and
+          many more`
         </p>
 
         <div className="about-intoduction">
@@ -62,11 +65,7 @@ const HomeRattan = () => {
           </div>
         </div>
       </div>
-      <div
-        className="about-explanations"
-        // style={{ backgroundImage: `url()` }}
-        // style={{ backgroundImage: `url(${WorkerPicTwo})` }}
-      >
+      <div className="about-explanations">
         <span>
           {/* <img src={Handcrafted} alt="" /> */}
           <em>Handcrafted</em>
@@ -85,6 +84,7 @@ const HomeRattan = () => {
               descriptiom,
               characteristicTitle,
               characteristic,
+              subTitle,
             }) => (
               <div key={id} className="product-cart-mod">
                 <div className="product-cart-mod-image-title">
@@ -93,7 +93,7 @@ const HomeRattan = () => {
                     style={{ backgroundImage: `url(${image})` }}
                   >
                     <h2>{name}</h2>
-                    <p>D: 2-5cm / L: 18-35cm</p>
+                    <p>{subTitle}</p>
                   </div>
                 </div>
                 <div className="product-cart-mod-content">
@@ -101,7 +101,7 @@ const HomeRattan = () => {
                     <p>{descriptiom}</p>
                   </div>
                   <div className="product-cart-mod-content-characteristic">
-                    <span>{characteristicTitle}</span>
+                    <span>Characteristic of {characteristicTitle} rattan.</span>
                     <ul>
                       {characteristic.map(
                         ({ characteristicId, characteristicText }) => (
@@ -126,7 +126,7 @@ const HomeRattan = () => {
 
       <div className="furniture">
         <p>
-          We also provide other proucts made of rattan such as tables, chairs,
+          We also provide other products made of rattan such as tables, chairs,
           baskets and others
         </p>
         <div className="furniture-image-container">
@@ -153,7 +153,10 @@ const HomeRattan = () => {
               <img src="https://i.ibb.co/2tyHm0q/ttobat.jpg" alt="Tohir" />
             </div>
             <div className="contact-card-description">
-              <span className="contact-card-name">Tohir Sihotang</span>
+              <span className="contact-card-name">
+                T<span>ohir</span> S<span>ihotang</span>
+                <hr />
+              </span>
               <span className="contact-card-position">Founder</span>
               <span className="contact-card-phone">+62 8126 5046 9760</span>
             </div>
@@ -163,7 +166,10 @@ const HomeRattan = () => {
               <img src={IPaul} alt="Ikhsan" />
             </div>
             <div className="contact-card-description">
-              <span className="contact-card-name">Muhammad Ikhsan</span>
+              <span className="contact-card-name">
+                M<span>uhammad</span> I<span>khsan</span>
+                <hr />
+              </span>
               <span className="contact-card-position">Co-Founder</span>
               <span className="contact-card-phone">+62 8950 9257 023</span>
             </div>
