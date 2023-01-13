@@ -116,7 +116,9 @@ const NavbarRattan = () => {
       </div>
       <div className="wa-button">
         <a href="https://wa.me/0812650469760">
-          <IoLogoWhatsapp />
+          <span className="glowing-wa-button">
+            <IoLogoWhatsapp />
+          </span>
         </a>
       </div>
       <Outlet />
